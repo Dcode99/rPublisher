@@ -13,6 +13,8 @@ Project design:
   Relationship properties: distance
   A query to this database would include the current zipcode and return the list of hopsital_ids in order of least to greatest distance.
   
+  atlas: reallysecurepwd
+  
   A complex event processor will be used to handle the event streams containing patient records.
   This CEP will be able to detect activity over time intervals to determine if there is an alert state. It will be used to handle the real time reporting APIs.
   
