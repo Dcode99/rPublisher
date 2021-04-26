@@ -6,6 +6,7 @@ Individual contributions: TBD
 
 Project design:
   Language: Python
+  
   A graph database will be used to store precomputed distances from zip codes to treatment facilities.
   Given a patient zip code, map to the nearest hospitals with open beds. A node is created for each zip code containing at least one hospital.
   Node values: hospital_ids, zip_code
