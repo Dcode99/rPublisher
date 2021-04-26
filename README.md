@@ -26,6 +26,6 @@ Project design:
   
   Entity: Hospital
     
-  Attributes: hospital_name, hospital_id, zip_code, alert_status, max_capacity, current_capacity
+  Attributes: hospital_name, hospital_id, zip_code, max_capacity, current_capacity
   
   Relation: Patient <-> hospital
