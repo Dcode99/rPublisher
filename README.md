@@ -19,8 +19,13 @@ Project design:
   This CEP will be able to detect activity over time intervals to determine if there is an alert state. It will be used to handle the real time reporting APIs.
   
   A relational database will be used to keep track of hospital capacity and patient status.
+  
   Entity: Patient
-    Attributes: first_name, last_name, mrn, zip_code, patient_status_code, hospital_id
+    
+  Attributes: first_name, last_name, mrn, zip_code, patient_status_code, hospital_id
+  
   Entity: Hospital
-    Attributes: hospital_name, hospital_id, zip_code, max_capacity, current_capacity
+    
+  Attributes: hospital_name, hospital_id, zip_code, alert_status, max_capacity, current_capacity
+  
   Relation: Patient <-> hospital
