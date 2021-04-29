@@ -13,7 +13,7 @@ def pub(virtualhost, message):
 
     credentials = pika.PlainCredentials(username, password)
     parameters = pika.ConnectionParameters(hostname,
-                                           13,
+                                           5672,
                                            virtualhost,
                                            credentials)
 
