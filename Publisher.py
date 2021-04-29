@@ -6,13 +6,14 @@ def pub(virtualhost, message):
 
     # Set the connection parameters to connect to rabbit-server1 on port 5672
     # on the / virtual host using the username "guest" and password "guest"
-    username = ''
-    password = ''
-    hostname = ''
+    # EDIT: Connection has been edited for our group now
+    username = 'student'
+    password = 'student01'
+    hostname = '128.163.202.50'
 
     credentials = pika.PlainCredentials(username, password)
     parameters = pika.ConnectionParameters(hostname,
-                                           5672,
+                                           13,
                                            virtualhost,
                                            credentials)
 
