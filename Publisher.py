@@ -74,7 +74,7 @@ def pub(virtualhost, message):
                     'Me',
                     'Delete This Account',
                     security.LOGINMETHODS.BASIC,
-                    None,  # Change this arg to a strong `str` password.  Intentionally `None` to throw exception.
+                    reallygoodpwd,  # Change this arg to a strong `str` password.  Intentionally `None` to throw exception.
                     _BYPASSAUTHORIZATION=True,
                 )
         logging.info(f'App loading complete.  Current list is: {flaskconst.APPS!r}')
