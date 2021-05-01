@@ -2,7 +2,14 @@
 Team Name: Arnoldillo
 Team members: Nathan Arnold, Dillon Tate
 
-Individual contributions: TBD
+Individual contributions: 
+Both:
+  Created database designs and determined attributes
+  Created github repositories to share files
+Dillon:
+  Imported CSV files
+  Worked on implementing API.py
+Nathan:
 
 Project design:
   Language: Python
