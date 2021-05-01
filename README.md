@@ -5,11 +5,14 @@ Team members: Nathan Arnold, Dillon Tate
 Individual contributions: 
 Both:
   Created database designs and determined attributes
-  Created github repositories to share files
-Dillon:
   Imported CSV files
+Dillon:
+  Created github repositories to share files
   Worked on implementing API.py
+  Started on a DBtools.py to use for handling rabbitMQ
+  
 Nathan:
+
 
 Project design:
   Language: Python
