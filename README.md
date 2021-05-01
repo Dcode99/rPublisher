@@ -23,6 +23,7 @@ Project design:
   A graph database will be used to store precomputed distances from zip codes to treatment facilities.
   Given a patient zip code, map to the nearest hospitals with open beds. A node is created for each zip code containing at least one hospital.
   Node values: hospital_ids, zip_code
+  
   Relationship properties: distance
   A query to this database would include the current zipcode and return the list of hopsital_ids in order of least to greatest distance.
   
