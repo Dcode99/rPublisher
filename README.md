@@ -9,9 +9,9 @@ Both:
   Imported CSV files
   
 Dillon:
-  Created github repositories to share files,
-  worked on implementing APIs.py to handle web requests,
-  started on a DBtools.py to use for handling rabbitMQ,
+  Created github repositories to share files;
+  implemented APIs.py to handle web requests including getteam, testcount, reset, gethospital;
+  started on a DBtools.py to use for handling rabbitMQ;
   implemented webserver.py to start the server
   
   
