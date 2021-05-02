@@ -12,7 +12,9 @@ Dillon:
   Created github repositories to share files;
   implemented APIs.py to handle web requests including getteam, testcount, reset, gethospital;
   started on a DBtools.py to use for handling rabbitMQ;
-  implemented webserver.py to start the server
+  implemented webserver.py to start the server (not used anymore);
+  created APIhelper functions;
+  set up resets and creation of mysql databases
   
   
 Nathan:
