@@ -26,9 +26,8 @@ Project design:
   
   MongoDB: A graph database will be used to store precomputed distances from zip codes to treatment facilities.
   Given a patient zip code, map to the nearest hospitals with open beds. A node is created for each zip code containing at least one hospital.
-  Node values: hospital_ids, zip_code
+  Node values: distance, zip_to, zip_from
   
-  Relationship properties: distance
   A query to this database would include the current zipcode and return the list of hopsital_ids in order of least to greatest distance.
   
   atlas: reallysecurepwd
@@ -40,10 +39,10 @@ Project design:
   
   Entity: Patient
     
-  Attributes: first_name, last_name, mrn, zip_code, patient_status_code, hospital_id
+  Attributes: first_name, last_name, mrn, zip_code, patient_status_code, hospital_id (this will be -1 if not assigned and 0 if home)
   
   Entity: Hospital
     
-  Attributes: hospital_name, hospital_id, zip_code, max_capacity, current_capacity
+  Attributes: current_capacity, and all properties included in hospital .csv (hospital_id, zip_code, trauma, etc...)
   
   Relation: Patient <-> hospital
