@@ -5,16 +5,17 @@ Team members: Nathan Arnold, Dillon Tate
 Individual contributions: 
 
 Both:
-  Created database designs and determined attributes
-  Imported CSV files
+  Created database designs and determined attributes;
+  Imported CSV files;
+  Meet together to go over code and discuss planning
   
 Dillon:
   Created github repositories to share files;
   implemented APIs.py to handle web requests including getteam, testcount, reset, gethospital;
-  started on a DBtools.py to use for handling rabbitMQ;
+  worked on DBtools.py to use for handling database functions;
   implemented webserver.py to start the server (not used anymore);
   created APIhelper functions;
-  set up resets and creation of mysql databases
+  set up resets and creation of mysql databases;
   
   
 Nathan:
