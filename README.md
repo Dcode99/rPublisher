@@ -24,7 +24,7 @@ Nathan:
 Project design:
   Language: Python
   
-  A graph database will be used to store precomputed distances from zip codes to treatment facilities.
+  MongoDB: A graph database will be used to store precomputed distances from zip codes to treatment facilities.
   Given a patient zip code, map to the nearest hospitals with open beds. A node is created for each zip code containing at least one hospital.
   Node values: hospital_ids, zip_code
   
@@ -36,7 +36,7 @@ Project design:
   A complex event processor will be used to handle the event streams containing patient records.
   This CEP will be able to detect activity over time intervals to determine if there is an alert state. It will be used to handle the real time reporting APIs.
   
-  A relational database will be used to keep track of hospital capacity and patient status.
+  MySQL: A relational database will be used to keep track of hospital capacity and patient status.
   
   Entity: Patient
     
