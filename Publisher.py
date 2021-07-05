@@ -6,9 +6,10 @@ def pub(virtualhost, message):
 
     # Set the connection parameters to connect to rabbit-server1 on port 5672
     # on the / virtual host using the username "guest" and password "guest"
-    username = ''
-    password = ''
-    hostname = ''
+    # EDIT: Connection has been edited for our group now
+    username = 'student'
+    password = 'student01'
+    hostname = '128.163.202.50'
 
     credentials = pika.PlainCredentials(username, password)
     parameters = pika.ConnectionParameters(hostname,
@@ -73,7 +74,7 @@ def pub(virtualhost, message):
                     'Me',
                     'Delete This Account',
                     security.LOGINMETHODS.BASIC,
-                    None,  # Change this arg to a strong `str` password.  Intentionally `None` to throw exception.
+                    reallygoodpwd,  # Change this arg to a strong `str` password.  Intentionally `None` to throw exception.
                     _BYPASSAUTHORIZATION=True,
                 )
         logging.info(f'App loading complete.  Current list is: {flaskconst.APPS!r}')
